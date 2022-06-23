@@ -26,7 +26,7 @@ function App() {
 	}
 	return (
 		<div className="App">
-			{convidado ? (
+			{window.location.pathname ? (
 				<>
 					<p id="white">CONVIDADO: {convidado.nome}</p>
 
@@ -45,13 +45,7 @@ function App() {
 					</p>
 				</>
 			) : (
-				<>
-					{window.location.pathname ? (
-						<p id="white">BUSCANDO CONVIDADO...</p>
-					) : (
-						''
-					)}
-				</>
+				<p id="white">BUSCANDO CONVIDADO...</p>
 			)}
 		</div>
 	);
