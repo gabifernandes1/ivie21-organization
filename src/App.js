@@ -9,6 +9,7 @@ function App() {
 		let url = window.location.pathname.split('/')[1];
 
 		sendData();
+
 		async function sendData() {
 			let usuario = await axios.post(`${process.env.REACT_APP_URL4}`, [
 				`${window.location.pathname.split('/')[1]}`,
