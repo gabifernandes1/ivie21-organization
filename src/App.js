@@ -7,6 +7,7 @@ function App() {
 	const [confirmado, setConfirmado] = useState(false);
 	useEffect(() => {
 		let url = window.location.pathname.split('/')[1];
+		console.log(url);
 
 		sendData();
 
