@@ -45,7 +45,13 @@ function App() {
 					</p>
 				</>
 			) : (
-				<p id="white">BUSCANDO CONVIDADO...</p>
+				<>
+					{window.location.pathname ? (
+						<p id="white">BUSCANDO CONVIDADO...</p>
+					) : (
+						''
+					)}
+				</>
 			)}
 		</div>
 	);
