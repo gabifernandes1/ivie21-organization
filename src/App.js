@@ -17,6 +17,7 @@ function App() {
 			console.log(usuario);
 		}
 	}, []);
+
 	async function entrou() {
 		await axios
 			.post(`${process.env.REACT_APP_URL5}`, [
@@ -26,7 +27,7 @@ function App() {
 	}
 	return (
 		<div className="App">
-			{window.location.pathname ? (
+			{window.location.pathname !== '' && convidado ? (
 				<>
 					<p id="white">CONVIDADO: {convidado.nome}</p>
 
