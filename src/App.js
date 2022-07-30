@@ -27,11 +27,11 @@ function App() {
 	}, []);
 
 	async function entrou() {
-		// await axios
-		// 	.post(`${process.env.REACT_APP_URL5}`, [
-		// 		`${window.location.pathname.split('/')[1]}`,
-		// 	])
-		// 	.then(setConfirmado(true));
+		await axios
+			.post(`${process.env.REACT_APP_URL5}`, [
+				`${window.location.pathname.split('/')[1]}`,
+			])
+			.then(setConfirmado(true));
 	}
 	return (
 		<div className="App">
